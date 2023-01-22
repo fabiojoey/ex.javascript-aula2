@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Propriedades e Métodos - pop</title>
+</head>
+<body>
+    <script>
+        // retirando o ultimo lemento de uma array use pop para tirar o 1º use shift e para retirar o ultimo e use splice para poder escolher um especifico 
+        var Cidades = ["São Paulo" ,"<br/>","Recife","Vitória","Aracaju"];
+        Cidades.push ("Blumenau");
+        Cidades.push ("Ouro Preto");
+        //document.write(Cidades[Cidades.length - 1] + "<br/>");
+        //Cidades.pop();
+        //document.write(Cidades[Cidades.length - 1] + "<br/>");
+        //---Forma correta---//
+        Cidades.pop();
+        document.write(Cidades+ "<br/>");
+        // não entendi por que não quebrou a linha
+        // Se abricarmos o <br/> na linha 12 entre as cidades da certo mas não é muito funcional
+        // var Cidades = ["São Paulo" ,"<br/>","Recife", "<br/>", "Vitória","<br/>" ,"Aracaju"];
+
+        
+        //49:28 Foi dito que este codigo incrementaria a cidade de Blumenau com o comando push
+        //e depois a cidade Ouro Preto, e o comando pop retiraria a cidade Recife que esta na posição 1
+        // mas não foi este o resultado que tivemos, retornou apenas Blumenau e Ouro Preto 
+        
+        //---mesmo usando o for nos retornou todas as Cidades---//            
+
+        //for (i=0; i< Cidades.length; i++)
+        //{
+        //  document.write(Cidades[i] + "<br/>");
+        //}
+
+        // achei essa explicação em um site segue o link: https://blog.debugeverything.com/pt/3-maneiras-de-remover-elementos-de-um-array-javascript/#:~:text=Removendo%20um%20elemento%20no%20final%20do%20array&text=O%20m%C3%A9todo%20pop()%20modifica,sem%20gerar%20um%20novo%20array.//
+        // outro link: https://blog.dbins.com.br/remover-elementos-de-um-array-com-javascript
+    </script>
+
+    
+    
+</body>
+</html>

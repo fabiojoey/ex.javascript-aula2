@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Propriedades e Métodos - Concat</title>
+</head>
+<body>
+    <script>
+        
+       var Sudeste = ["SP", "RJ" ,"ES" ,"MG" ];
+       var Sul = ["PR", "RS", "SC",];
+       var Norte = ["AC","AP","AM","PA","RO","PR","TO"];
+       var Nordeste = ["AL", "BA","CE", "MA", "PB","PE","PI", "RN", "SE"];
+       var Centroeste = ["DF","GO","MT","MS"];
+
+       var Estados = CentroOeste.concat(Sudeste, Sul, Norte, Nordeste);
+
+       document.write("<br/>Listando os estados:<br/><br/>")
+
+       Estados.sort();//Sort Ordenando os estados alfabeticamente
+       for (i=0; i< Estados.length; i++)
+       {
+        document.write(Estados[i] + "<br/>");
+       }
+    </script>
+    
+</body>
+</html>

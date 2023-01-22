@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Propriedades e Métodos - Splice</title>
+</head>
+<body>
+    <script>
+        var Cidades = ["São Paulo", "Recife" ,"Vitória", "Aracaju"];
+        for (i=0; i< Cidades.length; i ++)
+        {
+            document.write(Cidades[i] + "<br/>");
+        }
+    // Cidades.splice((apartir da posição)1,(adicionarei duas posições)2,"Manaus", "Londrina");
+       Cidades.splice(1,2,"Manaus", "Londrina");
+        for (i = 0; i < Cidades.length; i++)
+        {
+            document.write(Cidades[i] + "<br/>");
+        }
+    </script>
+    
+</body>
+</html>

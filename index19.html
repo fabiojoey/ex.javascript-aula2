@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - propriedades e Métodos - Shift</title>
+</head>
+<body>
+    <script>
+        var Cidades = ["São Paulo","Recife","Vitória","Aracaju"];
+        Cidades.push ("Blumenau");
+        Cidades.push ("Ouro Preto");
+        Cidades.push ("Maceió");
+        document.write("Antes do deslocamento: <br/>");
+        document.write("Tamanho: " + Cidades.length + " <br/><br/>");
+        document.write("1º elemento: " + Cidades[0] + " <br/><br/>");
+        Cidades.shift()
+        //shift cancela o primeiro elemento (São Paulo) da array assim passando a ser o primeiro elemento Recife
+        // e invez de uma array com 7 posições passou para uma array de 6 de tamanho
+        document.write("Após o deslocamento: <br/>");
+        document.write("Tamanho: " + Cidades.length + " <br/><br/>");
+        document.write("1º elemento: " + Cidades[0] + " <br/><br/>");
+    </script>
+</body>
+</html>
